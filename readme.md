@@ -17,7 +17,7 @@ A frontend project template that uses **NPM scripts** for bundling. Includes **b
 
 - Install dependencies
 
-		npm install # Also creates ./dist folder, and builds files in the first place
+		npm install # Also builds files in the first place
 
 - Run a development server
 
