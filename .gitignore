@@ -39,4 +39,5 @@ Thumbs.db
 # Everything hidden from git #
 ######################
 node_modules/
-dist/
+dist/css/*.css
+dist/js/*.js
