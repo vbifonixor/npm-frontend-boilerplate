@@ -1,7 +1,7 @@
 NPM Frontend boilerplate
 =========
 
-A frontend project template that uses **NPM scripts** for bundling. Includes **browserify** with **babelify**, **node-sass**, **autoprefixer**, **imagemin** and **uglify-js** for bundling and *flexboxgrid*, *normalize.css* and *jQuery* imported.
+A frontend project template that uses **NPM scripts** for bundling. Includes **browserify** with **babelify**, **node-sass**, **autoprefixer** and **uglify-js** for bundling and *flexboxgrid*, *normalize.css* and *jQuery* imported.
 
 ## Usage
 
@@ -26,7 +26,6 @@ A frontend project template that uses **NPM scripts** for bundling. Includes **b
 ### A command list you might need:
 
 	npm run build:all # Builds scss, js and images
-	npm run build:images # Builds images
 	npm run build:css # Builds css
 	npm run build:js # Builds js
 

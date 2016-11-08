@@ -10,13 +10,12 @@
     "browserify": "browserify src/js/main.js -o dist/js/app.js -t [ babelify --presets [es2015] ]",
     "uglify": "uglifyjs dist/js/app.js -m -o dist/js/app.min.js",
     "build:js": "npm run browserify && npm run uglify",
-    "build:images": "imagemin src/images dist/images -p",
-    "build:all": "npm run build:css && npm run build:js && npm run build:images",
+    "build:all": "npm run build:css && npm run build:js",
     "watch:css": "onchange \"src/scss/*.scss\" -- npm run build:css",
     "watch:js": "onchange \"src/js/*.js\" -- npm run build:js",
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, *.html\"",
     "watch": "parallelshell \"npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
-    "postinstall": "mkdirp dist/css dist/js dist/images && npm run build:all"
+    "postinstall": "npm run build:all"
   },
   "author": "Mikhail Kononenko aka vbifonix",
   "license": "ISC",
