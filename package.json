@@ -16,7 +16,8 @@
     "watch:js": "onchange \"src/js/*.js\" -- npm run build:js",
     "serve": "browser-sync start --server --files \"dist/css/*.css, dist/js/*.js, *.html\"",
     "watch": "parallelshell \"npm run serve\" \"npm run watch:css\" \"npm run watch:js\"",
-    "postinstall": "mkdir dist dist/css dist/js dist/images && npm run build:all"
+    "preinstall": "mkdir dist dist/css dist/js dist/images",
+    "postinstall": "npm run build:all"
   },
   "author": "Mikhail Kononenko aka vbifonix",
   "license": "ISC",
